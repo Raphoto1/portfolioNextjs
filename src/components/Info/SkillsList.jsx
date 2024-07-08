@@ -14,46 +14,24 @@ export default function SkillsList({ data }) {
         w={"fit-content"}
       >
         {data.map((itm) => (
-          <Box
-            p={"4vw"}
-            w={'33%'}
-            h={'100%'}
-            key={uuidv4()}
-            display={"flex"}
-            flexDir={'column'}
-            justifyContent={"center"}
-            alignItems={"center"}
-            backgroundColor={'black'}
-            borderColor={'white'}
-            borderWidth={5}
-            p={2}
+          <Box p={"4vw"}
+          w={'33%'}
+          h={'100%'}
+          key={uuidv4()}
+          display={"flex"}
+          flexDir={'column'}
+          justifyContent={"center"}
+          alignItems={"center"}
+          backgroundColor={'black'}
+          borderColor={'white'}
+          borderWidth={5}
           >
-            <Box display={'flex'} justifyContent={'center'} alignContent={'center'} alignItems={'center'}>
-              <CircularProgress
-                size={"10vw"}
-                value={itm.strenght}
-                zIndex={2}
-              />
-              <motion.div
-              whileHover={{scale:1.5}}
-              className="flex absolute justify-center md:w-20 sm:w-1"
-                zIndex={1}
-              >
-                <Image
-                  src={`${itm.image}`}
-                  objectFit={"fill"}
-                  alt={`${itm.name}`}
-                />
-              </motion.div>
+            <CircularProgress size={'10vw'} value={itm.strenght} zIndex={2} position={'absolute'}/>
+            <Box w={'5vw'} display={'flex'} position={"absolute"} justifyContent={'center'} zIndex={1}>
+              <Image src='\img\icons\soft\html-5.png' objectFit={"fill"} alt="Rafa's" />
             </Box>
-            <Box
-              zIndex={3}
-              display={"flex"}
-              backgroundColor={'black'}
-              alignContent={'end'}
-              alignItems={'end'}
-            >
-              <h3 className="text-xl font-medium">{itm.name}</h3>
+            <Box zIndex={3} display={'flex'} justifyContent={'end'} justifyItems={'end'} justifySelf={'end'}>
+                <h3 className='text-xl font-medium'>{itm.name}</h3>
             </Box>
           </Box>
         ))}
