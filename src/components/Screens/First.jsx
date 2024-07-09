@@ -12,14 +12,14 @@ import MouseScrollSign from "../Signs/MouseScrollSign";
 import Bio from "../Info/Bio";
 import TextAnimBold from "../TextAnim/TextAnimBold";
 import TextAnimSubt from "../TextAnim/TextAnimSubt";
-
+import SkillsetGeneral from '../Info/SkillsetGeneral'
 export default function First() {
   //dragging setup
   const [slideIndex, setSlideIndex] = useState(0);
   const [dragging, setDragging] = useState(false);
   const dragX = useMotionValue(0);
-  const dragBuffer = 120;
-  const slidesNumber = 1;
+  const dragBuffer = 100;
+  const slidesNumber = 2;
   const onDragStart = () => {
     setDragging(true);
   };
@@ -38,7 +38,7 @@ export default function First() {
       <div className='relative min-h-screen overflow-hidden'>
         <Box
           as={motion.div}
-          className='flex cursor-grab items-center'
+          className='flex cursor-grab'
           style={{
             x: dragX,
           }}
@@ -52,7 +52,7 @@ export default function First() {
           <Box minW={"100vw"}>
             <DragSign />
             <MouseScrollSign />
-            <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15} pt={10}>
+            <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15} pt={5}>
               <TextAnimBold text={`Hi I'm Rafa`} />
             </Box>
             <Box
@@ -71,6 +71,9 @@ export default function First() {
           </Box>
           <Box display={"flex"} minW={"100vw"} minHeight={"100vh"} pl={0}>
             <Bio />
+          </Box>
+          <Box>
+            <SkillsetGeneral/>
           </Box>
         </Box>
       </div>

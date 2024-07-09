@@ -18,7 +18,7 @@ export default function First2() {
   const [slideIndex, setSlideIndex] = useState(0);
   const [dragging, setDragging] = useState(false);
   const dragX = useMotionValue(0);
-  const dragBuffer = 120;
+  const dragBuffer = 100;
   const slidesNumber = 2;
   const onDragStart = () => {
     setDragging(true);
@@ -51,7 +51,7 @@ export default function First2() {
           }}
           onDragStart={onDragStart}
           onDragEnd={onDragEnd}>
-          <Box minW={"100vw"}>
+          <Box minW={"100%"}>
             <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15} pt={10}>
               <TextAnimBold text={`I'm FullStack Dev`} />
             </Box>
@@ -69,12 +69,12 @@ export default function First2() {
             </Box>
             <FaceYG glass={"item.color"} title={"item.title"} text={"item.text"} />
           </Box>
-          <Box display={"flex"} minW={"100vw"} minHeight={"100vh"} pl={0}>
-            <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15} pt={10}>
+          <Box display={"flex"} w={'100%'} minW={"100%"} minHeight={"100vh"} height={'100%'} pl={0}>
+            <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15} >
               <SkillsetDev />
             </Box>
           </Box>
-          <Box display={"flex"} minW={"100vw"} minHeight={"100vh"} pl={0}>
+          <Box display={"flex"} minW={"100vw"} maxHeight={"100vh"} pl={0}>
             <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15} pt={10}>
               <SkillsetDev />
             </Box>

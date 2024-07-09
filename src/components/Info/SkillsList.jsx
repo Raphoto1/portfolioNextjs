@@ -7,31 +7,26 @@ import { motion } from "framer-motion";
 export default function SkillsList({ data }) {
   return (
     <>
-      <Box
-        display={"flex"}
-        justifyContent={"center"}
-        flexWrap={"wrap"}
-        w={"fit-content"}
-      >
+      <Box display={"flex"} justifyContent={"space-evenly"} flexWrap={"wrap"} w={"100%"}>
         {data.map((itm) => (
-          <Box p={"4vw"}
-          w={'33%'}
-          h={'100%'}
-          key={uuidv4()}
-          display={"flex"}
-          flexDir={'column'}
-          justifyContent={"center"}
-          alignItems={"center"}
-          backgroundColor={'black'}
-          borderColor={'white'}
-          borderWidth={5}
-          >
-            <CircularProgress size={'10vw'} value={itm.strenght} zIndex={2} position={'absolute'}/>
-            <Box w={'5vw'} display={'flex'} position={"absolute"} justifyContent={'center'} zIndex={1}>
-              <Image src='\img\icons\soft\html-5.png' objectFit={"fill"} alt="Rafa's" />
+          <Box
+            display={"flex"}
+            w={['20%','33%']}
+            key={uuidv4()}
+            flexDir={"column"}
+            flexWrap={"wrap"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            alignSelf={"start"}
+            pb={['2vh',"1vh"]}>
+            <Box py={"2vw"} pt={['2vh',"4vh"]} pb={"4vh"} w={"33%"} h={"100%"} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+              <CircularProgress size={['12vw',"6vw"]} value={itm.strenght} zIndex={2} position={"absolute"} />
+              <Box as={motion.div} whileHover={{scale:1.5}} w={['8vw',"4vw"]} display={"flex"} position={"absolute"} justifyContent={"center"} zIndex={4}>
+                <Image src={itm.image} objectFit={"fill"} alt={itm.name} />
+              </Box>
             </Box>
-            <Box zIndex={3} display={'flex'} justifyContent={'end'} justifyItems={'end'} justifySelf={'end'}>
-                <h3 className='text-xl font-medium'>{itm.name}</h3>
+            <Box display={"flex"} justifyContent={"center"} maxW={"10vw"}>
+              <h3 className='md:text-base text-xs font-extralight leading-none'>{itm.name}</h3>
             </Box>
           </Box>
         ))}

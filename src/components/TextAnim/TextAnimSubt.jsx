@@ -7,7 +7,7 @@ export default function TextAnimSubt({ text }) {
     <div>
       {innerText.map((el, i) => (
         <motion.span
-          className='text-xl font-extralight justify-center text-center'
+          className='text-xl font-medium justify-center text-center'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: i / 10 }}

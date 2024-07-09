@@ -14,9 +14,9 @@ export default function Home() {
   return (
     <>
       <ThemeToggle />
-      <SkillsetDev/>
-      {/* <First />
-      <Dev/> */}
+      {/* <SkillsetDev/> */}
+      <First />
+      <Dev/>
     </>
   );
 }

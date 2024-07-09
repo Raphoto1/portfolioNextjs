@@ -8,13 +8,13 @@ export default function Bio() {
   return (
     <>
       <Box
-              padding={"5vw"}
+              padding={['2vw',"5vw"]}
               border='5px'
               alignContent={"center"}
               borderColor='gray'
               backgroundColor={"gray.500"}
               borderRadius={"xl"}
-              margin={"10%"}
+              margin={['1%',"10%"]}
               width={"fit-content"}>
               <WhiteGLines />
               <TextAnimBold text={"Bio"} minW={"100vw"} />
