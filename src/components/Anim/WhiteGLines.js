@@ -6,9 +6,9 @@ export default function WhiteGLines() {
       targets: ".cls-1",
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: "cubicBezier(.5,.05,.1,.3)",
-      durartion: 500,
+      durartion: 150,
       delay: function (el, i) {
-        return i * 250;
+        return i * 150;
       },
     });
   };

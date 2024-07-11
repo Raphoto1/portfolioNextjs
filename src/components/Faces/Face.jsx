@@ -30,10 +30,10 @@ export default function Face({ glass, title, text }) {
           initial={"offscreen"}
           whileInView={"onscreen"}
           viewport={{ once: true, amount: 0.9 }}>
-          <Box as={motion.div} position={"absolute"} justifyContent={'center'} display={"flex"} minW={'100Vw'} alignSelf={'center'} zIndex={20} variants={faceVariants}>
+          <Box as={motion.div} position={"absolute"} justifyContent={'center'} display={"flex"} minW={'100Vw'} alignSelf={'center'} maxH={'99vh'} zIndex={20} variants={faceVariants}>
             <Image src='/img/personal/colorGlass-01-01.webp' objectFit={"contain"} alt='glasses in multicolor' />
           </Box>
-          <Box as={motion.div} position={"absolute"} display={'flex'} justifyContent={'center'} minW={'100vw'} alignSelf={'center'}>
+          <Box as={motion.div} position={"absolute"} display={'flex'} justifyContent={'center'} minW={'100vw'} alignSelf={'center'} maxH={'99vh'}>
             <Image src='/img/personal/selfportait-01-01.webp' objectFit={"contain"} alt="Rafa's portrait vectorial style with hat fragmented" />
           </Box>
         </Box>

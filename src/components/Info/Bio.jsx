@@ -14,7 +14,7 @@ export default function Bio() {
               borderColor='gray'
               backgroundColor={"gray.500"}
               borderRadius={"xl"}
-              margin={['1%',"10%"]}
+              margin={['10%',"10%"]}
               width={"fit-content"}>
               <WhiteGLines />
               <TextAnimBold text={"Bio"} minW={"100vw"} />

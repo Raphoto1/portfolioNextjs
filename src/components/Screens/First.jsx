@@ -1,10 +1,8 @@
 "use client";
 //imports from app
 import React, { useState } from "react";
-import { Box, Image, transition } from "@chakra-ui/react";
-import { v4 as uuidv4 } from "uuid";
+import { Box } from "@chakra-ui/react";
 import { motion, useMotionValue } from "framer-motion";
-import { MdArrowForwardIos } from "react-icons/md";
 //imports created
 import Face from "../Faces/Face";
 import DragSign from "../Signs/DragSign";
@@ -12,14 +10,15 @@ import MouseScrollSign from "../Signs/MouseScrollSign";
 import Bio from "../Info/Bio";
 import TextAnimBold from "../TextAnim/TextAnimBold";
 import TextAnimSubt from "../TextAnim/TextAnimSubt";
-import SkillsetGeneral from '../Info/SkillsetGeneral'
+import SkillsetGeneral from "../Info/SkillsetGeneral";
+import ProjectsGeneral from "../Info/ProjectsGeneral";
 export default function First() {
   //dragging setup
   const [slideIndex, setSlideIndex] = useState(0);
   const [dragging, setDragging] = useState(false);
   const dragX = useMotionValue(0);
   const dragBuffer = 100;
-  const slidesNumber = 2;
+  const slidesNumber = 3;
   const onDragStart = () => {
     setDragging(true);
   };
@@ -38,7 +37,7 @@ export default function First() {
       <div className='relative min-h-screen overflow-hidden'>
         <Box
           as={motion.div}
-          className='flex cursor-grab'
+          className='flex cursor-grab items-center'
           style={{
             x: dragX,
           }}
@@ -49,7 +48,7 @@ export default function First() {
           }}
           onDragStart={onDragStart}
           onDragEnd={onDragEnd}>
-          <Box minW={"100vw"}>
+          <Box minW={"100%"}>
             <DragSign />
             <MouseScrollSign />
             <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15} pt={5}>
@@ -69,11 +68,20 @@ export default function First() {
             </Box>
             <Face glass={"item.color"} title={"item.title"} text={"item.text"} />
           </Box>
-          <Box display={"flex"} minW={"100vw"} minHeight={"100vh"} pl={0}>
-            <Bio />
+          <Box display={"flex"} w={'100%'} minW={"100%"} minHeight={"100vh"} height={'100%'} pl={0} alignItems={'center'}>
+            <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15}>
+              <Bio />
+            </Box>
           </Box>
-          <Box>
-            <SkillsetGeneral/>
+          <Box display={"flex"} w={"100%"} minW={"100%"} minHeight={"100vh"} height={"100%"} pl={0}>
+            <Box >
+              <SkillsetGeneral />
+            </Box>
+          </Box>
+          <Box display={"flex"} minW={"100%"} minHeight={"100%"} pl={0} justifyContent={'center'}>
+            <Box >
+              <ProjectsGeneral />
+            </Box>
           </Box>
         </Box>
       </div>

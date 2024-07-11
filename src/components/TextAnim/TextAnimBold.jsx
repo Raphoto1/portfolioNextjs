@@ -9,7 +9,7 @@ export default function TextAnimBold({ text }) {
     <div>
       {innerText.map((el, i) => (
         <motion.span
-          className='text-6xl font-extrabold'
+          className='text-4xl md:text-6xl font-extrabold'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.9, delay: i / 10 }}

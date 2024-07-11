@@ -11,7 +11,8 @@ import FaceYG from "../Faces/FaceYG";
 import SkillsetDev from "../Info/SkillsetDev";
 import TextAnimBold from "../TextAnim/TextAnimBold";
 import TextAnimSubt from "../TextAnim/TextAnimSubt";
-import PotentialCard from "../Info/PotentialCard";
+import ProjectsGeneral from "../Info/ProjectsGeneral";
+import DragSign from "../Signs/DragSign";
 
 export default function First2() {
   //dragging setup
@@ -52,6 +53,7 @@ export default function First2() {
           onDragStart={onDragStart}
           onDragEnd={onDragEnd}>
           <Box minW={"100%"}>
+            <DragSign />
             <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15} pt={10}>
               <TextAnimBold text={`I'm FullStack Dev`} />
             </Box>
@@ -69,14 +71,14 @@ export default function First2() {
             </Box>
             <FaceYG glass={"item.color"} title={"item.title"} text={"item.text"} />
           </Box>
-          <Box display={"flex"} w={'100%'} minW={"100%"} minHeight={"100vh"} height={'100%'} pl={0}>
-            <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15} >
+          <Box display={"flex"} w={"100%"} minW={"100%"} minHeight={"100vh"} height={"100%"} pl={0}>
+            <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15}>
               <SkillsetDev />
             </Box>
           </Box>
-          <Box display={"flex"} minW={"100vw"} maxHeight={"100vh"} pl={0}>
-            <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15} pt={10}>
-              <SkillsetDev />
+          <Box display={"flex"} w={"100%"} minW={"100%"} minHeight={"100vh"} height={"100%"} pl={0}>
+            <Box justifyContent={"center"} display={"flex"} minW={"100vw"} zIndex={15}>
+              <ProjectsGeneral />
             </Box>
           </Box>
         </Box>
