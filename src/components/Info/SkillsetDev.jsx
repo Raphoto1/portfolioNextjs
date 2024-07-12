@@ -4,7 +4,7 @@ import React from "react";
 import TextAnimBold from "../TextAnim/TextAnimBold";
 import TextAnimSubt from "../TextAnim/TextAnimSubt";
 import SkillsList from "./SkillsList";
-import {skillsDev} from '../../data/skillset'
+import {skillsDevFront, skillsDevBack,skillsDevGeneral} from '../../data/skillset'
 export default function SkillsetDev() {
 
   return (
@@ -18,19 +18,19 @@ export default function SkillsetDev() {
             <Box pb={'1vh'}>
               <TextAnimSubt text={"Front End"}/>
             </Box>
-            <SkillsList data={skillsDev} />
+            <SkillsList data={skillsDevFront} />
           </Box>
           <Box backgroundColor={'lightslategray'} w={{md:'30%'}} className='md:w-1/4 w-full text-center rounded-md'>
             <Box pb={'1vh'}>
               <TextAnimSubt text={"Back End"} />
             </Box>
-            <SkillsList data={skillsDev} />
+            <SkillsList data={skillsDevBack} />
           </Box>
           <Box backgroundColor={'lightslategray'} w={{md:'30%'}} className='md:w-1/4 w-full text-center rounded-md'>
             <Box pb={'1vh'}>
               <TextAnimSubt text={"General"} />
             </Box>
-            <SkillsList data={skillsDev} />
+            <SkillsList data={skillsDevGeneral} />
           </Box>
         </Box>
       </Box>

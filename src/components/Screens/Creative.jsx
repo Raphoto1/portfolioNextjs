@@ -14,7 +14,7 @@ import TextAnimSubt from "../TextAnim/TextAnimSubt";
 import ProjectsGeneral from "../Info/ProjectsGeneral";
 import DragSign from "../Signs/DragSign";
 
-export default function Dev() {
+export default function Creative() {
   //dragging setup
   const [slideIndex, setSlideIndex] = useState(0);
   const [dragging, setDragging] = useState(false);
@@ -55,7 +55,7 @@ export default function Dev() {
           <Box minW={"100%"}>
             <DragSign />
             <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15} pt={10}>
-              <TextAnimBold text={`I'm FullStack Dev`} />
+              <TextAnimBold text={`I'm Visual Artist`} />
             </Box>
             <Box
               justifyContent={"center"}
@@ -67,7 +67,7 @@ export default function Dev() {
               minH={"100vh"}
               pb={10}
               zIndex={15}>
-              <TextAnimSubt text={`Full Stack Dev Mern`} />
+              <TextAnimSubt text={`Digital & Traditional Creator`} />
             </Box>
             <FaceYG glass={"item.color"} title={"item.title"} text={"item.text"} />
           </Box>

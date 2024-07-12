@@ -4,6 +4,7 @@ import React from "react";
 import TextAnimBold from "../TextAnim/TextAnimBold";
 import TextAnimSubt from "../TextAnim/TextAnimSubt";
 import SkillsList from "./SkillsList";
+import {skillsDev,skillsCreative,skillsGeneral} from '../../data/skillset'
 export default function SkillsetGeneral() {
   const frontEnd = [
     { name: "Html", strenght: 20, image: "img/icons/soft/html-5.png" },
@@ -29,19 +30,19 @@ export default function SkillsetGeneral() {
             <Box pb={'1vh'}>
               <TextAnimSubt text={"Dev"}/>
             </Box>
-            <SkillsList data={frontEnd} />
+            <SkillsList data={skillsDev} />
           </Box>
           <Box backgroundColor={'lightslategray'} w={{md:'30%'}} className='md:w-1/4 w-full text-center rounded-md'>
             <Box pb={'1vh'}>
               <TextAnimSubt text={"Creative"} />
             </Box>
-            <SkillsList data={frontEnd} />
+            <SkillsList data={skillsCreative} />
           </Box>
           <Box backgroundColor={'lightslategray'} w={{md:'30%'}} className='md:w-1/4 w-full text-center rounded-md'>
             <Box pb={'1vh'}>
               <TextAnimSubt text={"General"} />
             </Box>
-            <SkillsList data={frontEnd} />
+            <SkillsList data={skillsGeneral} />
           </Box>
         </Box>
       </Box>

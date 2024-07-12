@@ -1,30 +1,34 @@
 import React from "react";
+import { Box, Card, useDisclosure, CardBody, Image, Stack, Heading, Text, CardFooter, Button, ButtonGroup, Divider, Link } from "@chakra-ui/react";
 
-import { Box, Card, CardBody, Image, Stack, Heading, Text, CardFooter, Button, ButtonGroup, Divider } from "@chakra-ui/react";
+import ModalImg from "./../Global/ModalImg";
 
-export default function ProjectCard({photo,title,text,link1,link2,link1Title, link2Title}) {
+export default function ProjectCard({ photo, title, text, link1, link2, link1Title, link2Title }) {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Card maxW={'lg'} minW={'xs'}>
+      <ModalImg imageUrl={photo} title={title} isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
+      <Card maxW={"lg"} minW={"xs"}>
         <CardBody>
-          <Image src='/img/projects/arts/displate.png' borderRadius={"lg"}/>
+          <Image src={photo} borderRadius={"lg"} onClick={onOpen}/>
           <Stack mt={6} spacing={3}>
-            <Heading size={"xl"}>{title }</Heading>
-            <Text noOfLines={3}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus illo, accusamus vel explicabo dicta quod at fugiat. Eligendi autem ipsa
-              soluta numquam dolorem quia unde earum sint veritatis repudiandae? Incidunt.
-            </Text>
+            <Heading size={"xl"}>{title}</Heading>
+            <Text noOfLines={3}>{text}</Text>
           </Stack>
         </CardBody>
         <Divider />
         <CardFooter>
           <ButtonGroup>
-            <Button variant={"solid"} fontSize={['md',"2xl"]}>
-              Link 1
-            </Button>
-            <Button variant={"solid"} fontSize={['md',"2xl"]}>
-              Link2
-            </Button>
+            <Link href={link1} target='blank'>
+              <Button variant={"solid"} fontSize={["md", "xl"]}>
+                {link1Title}
+              </Button>
+            </Link>
+            <Link href={link2} target='blank'>
+              <Button variant={"solid"} fontSize={["md", "xl"]}>
+                {link2Title}
+              </Button>
+            </Link>
           </ButtonGroup>
         </CardFooter>
       </Card>

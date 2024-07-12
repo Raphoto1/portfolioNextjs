@@ -7,8 +7,6 @@ import { background } from "@chakra-ui/react";
 
 //https://framermotionexamples.com/example/animate-presence-stack-3d
 export default function CardAnim(props) {
-  //handle data
-  const dataTest = [{ title: 'test1' }, { title: 'test2' }, { title: 'test3' }]
 
 //handle animation
   const [exitX, setExitX] = useState(0);
@@ -26,7 +24,7 @@ export default function CardAnim(props) {
     }),
   };
   const variantsBackCard = {
-    initial: { scale: 0, y: 105, opacity: 0 },
+    initial: { scale: 0, y: 150, opacity: 0 },
     animate: { scale: 0.75, y: 100, opacity: 0.5 },
   };
 
@@ -44,8 +42,8 @@ export default function CardAnim(props) {
   return (
     <motion.div
       style={{
-        width: {sm:800,md:1600},
-        height: "100%",
+        width: {sm:200,md:400},
+        height: "70%",
         position: "absolute",
         x,
         rotate,
@@ -68,6 +66,13 @@ export default function CardAnim(props) {
       transition={props.frontCard ? { type: "spring", stiffness: 300, damping: 20 } : { scale: { duration: 0.2 }, opacity: { duration: 0.4 } }}>
       <ProjectCard
         title={props.data[props.index]?.title}
+        photo={props.data[props.index]?.image}
+        text={props.data[props.index]?.description}
+        link1={props.data[props.index]?.link1}
+        link1Title={props.data[props.index]?.link1Title}
+        link2={props.data[props.index]?.link2}
+        link2Title={props.data[props.index]?.link2Title}
+        
         style={{
           borderRadius: 30,
           scale,
