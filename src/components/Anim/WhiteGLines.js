@@ -1,8 +1,27 @@
-import React, { Component } from "react";
+'use client'
+import React, { Component, useEffect, useRef } from "react";
 import anime from "animejs";
 export default function WhiteGLines() {
-  const animation = () => {
-    anime({
+  // const animation = () => {
+  //   anime({
+  //     targets: ".cls-1",
+  //     strokeDashoffset: [anime.setDashoffset, 0],
+  //     easing: "cubicBezier(.5,.05,.1,.3)",
+  //     durartion: 150,
+  //     delay: function (el, i) {
+  //       return i * 150;
+  //     },
+  //   });
+  // };
+
+  // const componentDidMount = () => {
+  //   animation();
+  // };
+  // componentDidMount();
+
+  const divRef = useRef(null);
+  useEffect(() => {
+        anime({
       targets: ".cls-1",
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: "cubicBezier(.5,.05,.1,.3)",
@@ -11,12 +30,7 @@ export default function WhiteGLines() {
         return i * 150;
       },
     });
-  };
-
-  const componentDidMount = () => {
-    animation();
-  };
-  componentDidMount();
+  },[])
   return (
     <div className="flex justify-center sm:h-20 md:h-40 pb-10">
       <svg style={{ stroke: "white", fillOpacity:0 }} id='Capa_2' data-name='Capa 2' viewBox='0 0 406.2986987138 144.7797443757'>

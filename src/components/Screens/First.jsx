@@ -12,6 +12,7 @@ import TextAnimBold from "../TextAnim/TextAnimBold";
 import TextAnimSubt from "../TextAnim/TextAnimSubt";
 import SkillsetGeneral from "../Info/SkillsetGeneral";
 import ProjectsGeneral from "../Info/ProjectsGeneral";
+
 export default function First() {
   //dragging setup
   const [slideIndex, setSlideIndex] = useState(0);

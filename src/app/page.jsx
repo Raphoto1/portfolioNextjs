@@ -10,7 +10,9 @@ import Creative from '../components/Screens/Creative'
 import Vfx from '../components/Screens/Vfx'
 //test
 import ProjectsGeneral from "../components/Info/ProjectsGeneral";
+//sp navigatioin
 //https://medium.com/@ojogbomichael/same-page-navigation-with-nextjs-bb99cccfda11
+
 export default function Home() {
 
   return (
