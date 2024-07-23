@@ -28,8 +28,9 @@ export default function ModalContact({ isOpen, onOpen, onClose }) {
     let form = document.getElementById("contactForm");
     let formData = new FormData(form);
     let response = await fetch(contactPath, {
-      method: "post",
+      mode: "no-cors",
       credentials: "include",
+      method: "POST",
       body: formData,
     })
       .then((res) => res.json())
@@ -49,23 +50,23 @@ export default function ModalContact({ isOpen, onOpen, onClose }) {
           <ModalHeader> Let's Talk </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <form onSubmit={handleSubmit} id="contactForm">
+            <form onSubmit={handleSubmit} id='contactForm'>
               <FormControl>
                 <FormLabel>Name</FormLabel>
-                <Input type="text" name="name" placeholder="name" />
+                <Input type='text' name='name' placeholder='name' />
               </FormControl>
               <FormControl isRequired>
                 <FormLabel>Email</FormLabel>
-                <Input type="email" name="email" onChange={setMailInput} placeholder="awesome@email.com" />
+                <Input type='email' name='email' onChange={setMailInput} placeholder='awesome@email.com' />
                 {isErrorMail ? <FormHelperText>Mail is required </FormHelperText> : null}
               </FormControl>
               <FormControl isRequired>
                 <FormLabel>How can I help you</FormLabel>
                 {isErrorMessage ? <FormHelperText>Message is required </FormHelperText> : null}
-                <Textarea name="message" resize={"vertical"} size={"sm"} onChange={setMessageInput} placeholder="Let's talk!!" />
+                <Textarea name='message' resize={"vertical"} size={"sm"} onChange={setMessageInput} placeholder="Let's talk!!" />
               </FormControl>
               <Box pt={"5"}>
-                <Button type="submit" onClick={onClose}>
+                <Button type='submit' onClick={onClose}>
                   Send
                 </Button>
               </Box>
