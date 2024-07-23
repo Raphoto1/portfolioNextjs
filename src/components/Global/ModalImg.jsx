@@ -18,8 +18,8 @@ export default function ModalImg({imageUrl, title, isOpen, onOpen, onClose}) {
               <ModalContent>
                   <ModalHeader>{title }</ModalHeader>
                   <ModalCloseButton />
-                  <ModalBody>
-                  <Image src={imageUrl} borderRadius={"lg"}/>
+                  <ModalBody display={'flex'} justifyContent={'center'}>
+                  <Image src={imageUrl} borderRadius={"lg"} objectFit={'contain'}/>
                   </ModalBody>
               </ModalContent>
       </Modal>

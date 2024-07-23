@@ -4,6 +4,7 @@ import { Box, Image } from "@chakra-ui/react";
 
 //imports Created
 import ThemeToggle from "../components/Global/ThemeToggle";
+import BtnContact from '../components/Global/BtnContact'
 import First from '../components/Screens/First'
 import Dev from '../components/Screens/Dev'
 import Creative from '../components/Screens/Creative'
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <>
       <ThemeToggle />
+      <BtnContact/>
       {/* <ProjectsGeneral/> */}
       <First />
       <Dev />

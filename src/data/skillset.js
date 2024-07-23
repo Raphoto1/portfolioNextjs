@@ -49,4 +49,6 @@ export const skillsDevBack = [
 export const skillsDevGeneral = [
     { name: "Nodejs", strenght: 40, image: "img/icons/soft/nodeJs.png" },
     { name: "Github", strenght: 40, image: "img/icons/soft/GitHub.png" },
+    { name: "Android", strenght: 40, image: "img/icons/soft/GitHub.png" },
+    { name: "Ios", strenght: 40, image: "img/icons/soft/GitHub.png" },
 ]

@@ -8,14 +8,15 @@ import { Providers } from "./providers";
 import theme from "../styles/theme";
 export const metadata = {
   title: "Rafael Martinez Portfolio",
-  description: "Personal Portfoliio as multipotencial creator",
+  description: "Personal Portfolio as multipotencial creator",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+      <link rel='icon' href='/favicon2.ico' type='image/<generated>' sizes='<generated>' />
       <body className={inter.className}>
-        <ColorModeScript initialColorMode={theme.config.initialColorMode } />
+        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Providers>{children}</Providers>
       </body>
     </html>

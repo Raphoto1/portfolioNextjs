@@ -22,7 +22,7 @@ export default function SkillsetGeneral() {
   return (
     <>
       <Box display={"flex"} flexDirection={"column"} w={'100%'}>
-        <Box display={"flex"} w={"100vw"} justifyContent={"center"} justifyItems={"center"} justifySelf={"center"} pb={'2vh'}>
+        <Box display={"flex"} w={"100vw"} justifyContent={"center"} justifyItems={"center"} justifySelf={"center"} pb={'2vh'} pt={[0,'5vh']}>
           <TextAnimBold text={`General Skillset`} />
         </Box>
         <Box display={"flex"} w={"90%"} flexFlow={"wrap"} alignContent={'center'} alignItems={'center'} alignSelf={'center'} h={'85vh'} maxH={'100%'} justifyContent={'space-evenly'} gap={1} >

@@ -7,7 +7,7 @@ import { motion, useMotionValue } from "framer-motion";
 import { MdArrowForwardIos } from "react-icons/md";
 //imports created
 import Face from "../Faces/Face";
-import FaceYG from "../Faces/FaceYG";
+import FaceCg from "../Faces/FaceCg";
 import SkillsetDev from "../Info/SkillsetDev";
 import TextAnimBold from "../TextAnim/TextAnimBold";
 import TextAnimSubt from "../TextAnim/TextAnimSubt";
@@ -69,7 +69,7 @@ export default function Vfx() {
               zIndex={15}>
               <TextAnimSubt text={`Show Screens & Motion Graphics`} />
             </Box>
-            <FaceYG glass={"item.color"} title={"item.title"} text={"item.text"} />
+            <FaceCg glass={"item.color"} title={"item.title"} text={"item.text"} />
           </Box>
           <Box display={"flex"} w={"100%"} minW={"100%"} minHeight={"100vh"} height={"100%"} pl={0}>
             <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15}>

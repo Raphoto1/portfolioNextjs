@@ -5,7 +5,7 @@ import { Box, SimpleGrid, useMediaQuery } from "@chakra-ui/react";
 
 import CardAnimContainer from "../Anim/CardAnimContainer";
 import TextAnimBold from "../TextAnim/TextAnimBold";
-import {projectsGeneralList} from '../../data/projects'
+import {projectsGeneralList, projectsDevList, projectsVfxList,projectsArtsList} from '../../data/projects'
 
 export default function ProjectsGeneral() {
   const dataTest = [{ title: "test1" }, { title: "test2" }, { title: "test3" }];
@@ -13,7 +13,7 @@ export default function ProjectsGeneral() {
 
   return (
     <>
-      <Box display={"flex"} w={"100vw"} justifyContent={"center"} justifyItems={"center"} justifySelf={"center"} position={'absolute'}>
+      <Box display={"flex"} w={"100vw"} justifyContent={"center"} justifyItems={"center"} justifySelf={"center"} position={'absolute'} pt={[0,'5vh']}>
           <TextAnimBold text={`General Projects`} />
         </Box>
       <Box display={"flex"} justifyContent={"center"} maxW={"100vw"} minH={"100vh"} alignContent={"center"}>
@@ -21,13 +21,13 @@ export default function ProjectsGeneral() {
           {isLargerThan400 ? (
             <>
               <Box>
-                <CardAnimContainer dataIn={projectsGeneralList} dataLenght={projectsGeneralList.length} />
+                <CardAnimContainer dataIn={projectsDevList} dataLenght={projectsDevList.length} />
               </Box>
               <Box>
-                <CardAnimContainer dataIn={dataTest} dataLenght={dataTest.length} />
+                <CardAnimContainer dataIn={projectsVfxList} dataLenght={projectsVfxList.length} />
               </Box>
               <Box>
-                <CardAnimContainer dataIn={dataTest} dataLenght={dataTest.length} />
+                <CardAnimContainer dataIn={projectsArtsList} dataLenght={projectsArtsList.length} />
               </Box>
             </>
           ) : (
