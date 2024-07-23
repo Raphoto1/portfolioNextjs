@@ -7,12 +7,12 @@ export default function ProjectCard({ photo, title, text, link1, link2, link1Tit
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <ModalImg imageUrl={photo} title={title} isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
+      <ModalImg imageUrl={photo} title={title} isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
       <Card maxW={"lg"} minW={"xs"}>
         <CardBody>
-          <Tooltip label={'Check Image'}>
-            <Box maxH={[300,400]} overflow={'hidden'}>
-              <Image src={photo} borderRadius={"lg"} objectFit={'contain'} onClick={onOpen}/>
+          <Tooltip label={"Check Image"}>
+            <Box maxH={[300, 400]} overflow={"hidden"}>
+              <Image src={photo} borderRadius={"lg"} objectFit={"contain"} onClick={onOpen} alt={title} />
             </Box>
           </Tooltip>
           <Stack mt={6} spacing={3}>
@@ -21,20 +21,24 @@ export default function ProjectCard({ photo, title, text, link1, link2, link1Tit
           </Stack>
         </CardBody>
         <Divider />
-        {link1Title!=='null'?<CardFooter justify={'center'}>
-          <ButtonGroup>
-            <Link href={link1} target='blank'>
-              <Button variant={"solid"} fontSize={["md", "xl"]}>
-                {link1Title}
-              </Button>
-            </Link>
-        {link2Title!=='null'?<Link href={link2} target='blank'>
-              <Button variant={"solid"} fontSize={["md", "xl"]}>
-                {link2Title}
-              </Button>
-            </Link>:null}
-          </ButtonGroup>
-        </CardFooter>:null}
+        {link1Title !== "null" ? (
+          <CardFooter justify={"center"}>
+            <ButtonGroup>
+              <Link href={link1} target='blank'>
+                <Button variant={"solid"} fontSize={["md", "xl"]}>
+                  {link1Title}
+                </Button>
+              </Link>
+              {link2Title !== "null" ? (
+                <Link href={link2} target='blank'>
+                  <Button variant={"solid"} fontSize={["md", "xl"]}>
+                    {link2Title}
+                  </Button>
+                </Link>
+              ) : null}
+            </ButtonGroup>
+          </CardFooter>
+        ) : null}
       </Card>
     </>
   );
