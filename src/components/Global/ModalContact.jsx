@@ -14,11 +14,16 @@ import {
   Textarea,
   Input,
   Button,
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
 } from "@chakra-ui/react";
 
 export default function ModalContact({ isOpen, onOpen, onClose }) {
   const [mailInput, setMailInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
+  const [fetchError, setFetchError] = useState(false);
   const isErrorMail = mailInput === "";
   const isErrorMessage = messageInput === "";
   const contactPath = "https://shops.creativerafa.com/api/contact";
@@ -27,23 +32,35 @@ export default function ModalContact({ isOpen, onOpen, onClose }) {
     e.preventDefault();
     let form = document.getElementById("contactForm");
     let formData = new FormData(form);
-    let response = await fetch(contactPath, {
-      mode: "no-cors",
-      credentials: "include",
-      method: "POST",
-      body: formData,
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.error) {
-          alert("error contacting, please try again");
-        } else {
-          alert("Successfully Contacted to CreativeRafa");
-        }
-      });
+    try {
+      await fetch(contactPath, {
+        mode: "no-cors",
+        credentials: "include",
+        method: "POST",
+        body: formData,
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.error) {
+            alert("error contacting, please try again");
+            onClose;
+          } else {
+            alert("Successfully Contacted to CreativeRafa");
+            onClose;
+          }
+        });
+    } catch (error) {
+      onClose
+      setFetchError(!fetchError);
+    }
   };
   return (
     <>
+      {fetchError?<Alert status='error'>
+          <AlertIcon />
+          <AlertTitle>Ups my bad</AlertTitle>
+          <AlertDescription>Please try again later</AlertDescription>
+        </Alert>:null}
       <Modal isOpen={isOpen} onClose={onClose} size={["full", "xl"]}>
         <ModalOverlay />
         <ModalContent>
@@ -66,9 +83,7 @@ export default function ModalContact({ isOpen, onOpen, onClose }) {
                 <Textarea name='message' resize={"vertical"} size={"sm"} onChange={setMessageInput} placeholder="Let's talk!!" />
               </FormControl>
               <Box pt={"5"}>
-                <Button type='submit' onClick={onClose}>
-                  Send
-                </Button>
+                <Button type='submit'>Send</Button>
               </Box>
             </form>
           </ModalBody>
