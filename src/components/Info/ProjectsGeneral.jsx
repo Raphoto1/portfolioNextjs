@@ -13,7 +13,7 @@ export default function ProjectsGeneral() {
 
   return (
     <>
-      <Box display={"flex"} w={"100vw"} justifyContent={"center"} justifyItems={"center"} justifySelf={"center"} position={'absolute'} pt={[0,'5vh']}>
+      <Box display={"flex"} w={"100vw"} justifyContent={"center"} justifyItems={"center"} justifySelf={"center"} position={'absolute'} pt={[0,'1vh']}>
           <TextAnimBold text={`General Projects`} />
         </Box>
       <Box display={"flex"} justifyContent={"center"} maxW={"100vw"} minH={"100vh"} alignContent={"center"}>

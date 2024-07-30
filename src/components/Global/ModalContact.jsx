@@ -18,49 +18,60 @@ import {
   AlertIcon,
   AlertTitle,
   AlertDescription,
+  useToast,
 } from "@chakra-ui/react";
 
-export default function ModalContact({ isOpen, onOpen, onClose }) {
+export default function ModalContact({ isOpen, onOpen, onClose, responseBack, setResponseBack }) {
   const [mailInput, setMailInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
   const [fetchError, setFetchError] = useState(false);
   const isErrorMail = mailInput === "";
   const isErrorMessage = messageInput === "";
   const contactPath = "https://shops.creativerafa.com/api/contact";
+  //toast
+  const toast = useToast();
+  const toastConfirm = () => {
+    toast({
+      title: `Thanks!!! Let's Talk`,
+      status: "success",
+      isClosable: true,
+    });
+  };
+  //internal close
+  const closeMod = () => {
+    toastConfirm();
+    setResponseBack(!responseBack);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     let form = document.getElementById("contactForm");
     let formData = new FormData(form);
     try {
-      await fetch(contactPath, {
+      const response = await fetch(contactPath, {
         mode: "no-cors",
         credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
         method: "POST",
         body: formData,
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.error) {
-            alert("error contacting, please try again");
-            onClose;
-          } else {
-            alert("Successfully Contacted to CreativeRafa");
-            onClose;
-          }
-        });
+      });
+      const resStatus = await response;
+      closeMod();
     } catch (error) {
-      onClose
-      setFetchError(!fetchError);
+      alert(`catch: ${error}`);
     }
   };
   return (
     <>
-      {fetchError?<Alert status='error'>
+      {fetchError ? (
+        <Alert status='error'>
           <AlertIcon />
           <AlertTitle>Ups my bad</AlertTitle>
           <AlertDescription>Please try again later</AlertDescription>
-        </Alert>:null}
+        </Alert>
+      ) : null}
       <Modal isOpen={isOpen} onClose={onClose} size={["full", "xl"]}>
         <ModalOverlay />
         <ModalContent>
