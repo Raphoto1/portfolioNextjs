@@ -12,7 +12,7 @@ export default function ProjectCard({ photo, title, text, link1, link2, link1Tit
         <CardBody>
           <Tooltip label={"Check Image"}>
             <Box maxH={[300, 400]} overflow={"hidden"}>
-              <Image src={photo} borderRadius={"lg"} objectFit={"contain"} onClick={onOpen} alt={title} />
+              <Image src={photo} borderRadius={"lg"} objectFit={"contain"} onClick={onOpen} alt={title} loading="lazy"/>
             </Box>
           </Tooltip>
           <Stack mt={6} spacing={3}>

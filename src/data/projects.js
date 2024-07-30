@@ -110,7 +110,7 @@ export const projectsDevList = [
     link2: "https://github.com/Raphoto1/finalDesarrolloApps",
     link2Title: "Github",
   },
-]
+];
 
 export const projectsVfxList = [
   {
@@ -148,8 +148,8 @@ export const projectsVfxList = [
     link1Title: "Samples",
     link2: "https://www.google.com/",
     link2Title: "null",
-  }, 
-]
+  },
+];
 
 export const projectsArtsList = [
   {
@@ -179,4 +179,4 @@ export const projectsArtsList = [
     link2: "https://shops.creativerafa.com/shops/66994f56314d9394667f0c13",
     link2Title: "Design",
   },
-]
+];
