@@ -8,10 +8,10 @@ import { MdArrowForwardIos } from "react-icons/md";
 //imports created
 import Face from "../Faces/Face";
 import FaceMg from "../Faces/FaceMg";
-import SkillsetDev from "../Info/SkillsetDev";
+import SkillsetCreative from "../Info/SkillsetCreative";
 import TextAnimBold from "../TextAnim/TextAnimBold";
 import TextAnimSubt from "../TextAnim/TextAnimSubt";
-import ProjectsGeneral from "../Info/ProjectsGeneral";
+import ProjectsCreative from "../Info/ProjectsCreative";
 import DragSign from "../Signs/DragSign";
 
 export default function Creative() {
@@ -73,12 +73,12 @@ export default function Creative() {
           </Box>
           <Box display={"flex"} w={"100%"} minW={"100%"} minHeight={"100vh"} height={"100%"} pl={0}>
             <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15}>
-              <SkillsetDev />
+              <SkillsetCreative />
             </Box>
           </Box>
           <Box display={"flex"} w={"100%"} minW={"100%"} minHeight={"100vh"} height={"100%"} pl={0}>
             <Box justifyContent={"center"} display={"flex"} minW={"100vw"} zIndex={15}>
-              <ProjectsGeneral />
+              <ProjectsCreative />
             </Box>
           </Box>
         </Box>

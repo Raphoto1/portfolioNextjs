@@ -11,7 +11,7 @@ import FaceYG from "../Faces/FaceYG";
 import SkillsetDev from "../Info/SkillsetDev";
 import TextAnimBold from "../TextAnim/TextAnimBold";
 import TextAnimSubt from "../TextAnim/TextAnimSubt";
-import ProjectsGeneral from "../Info/ProjectsGeneral";
+import ProjectsDev from "../Info/ProjectsDev";
 import DragSign from "../Signs/DragSign";
 
 export default function Dev() {
@@ -78,7 +78,7 @@ export default function Dev() {
           </Box>
           <Box display={"flex"} w={"100%"} minW={"100%"} minHeight={"100vh"} height={"100%"} pl={0}>
             <Box justifyContent={"center"} display={"flex"} minW={"100vw"} zIndex={15}>
-              <ProjectsGeneral />
+              <ProjectsDev />
             </Box>
           </Box>
         </Box>

@@ -8,10 +8,10 @@ import { MdArrowForwardIos } from "react-icons/md";
 //imports created
 import Face from "../Faces/Face";
 import FaceCg from "../Faces/FaceCg";
-import SkillsetDev from "../Info/SkillsetDev";
+import SkillsetVfx from "../Info/SkillsetVfx";
 import TextAnimBold from "../TextAnim/TextAnimBold";
 import TextAnimSubt from "../TextAnim/TextAnimSubt";
-import ProjectsGeneral from "../Info/ProjectsGeneral";
+import ProjectsVfx from "../Info/ProjectsVfx";
 import DragSign from "../Signs/DragSign";
 
 export default function Vfx() {
@@ -73,12 +73,12 @@ export default function Vfx() {
           </Box>
           <Box display={"flex"} w={"100%"} minW={"100%"} minHeight={"100vh"} height={"100%"} pl={0}>
             <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15}>
-              <SkillsetDev />
+              <SkillsetVfx />
             </Box>
           </Box>
           <Box display={"flex"} w={"100%"} minW={"100%"} minHeight={"100vh"} height={"100%"} pl={0}>
             <Box justifyContent={"center"} display={"flex"} minW={"100vw"} zIndex={15}>
-              <ProjectsGeneral />
+              <ProjectsVfx />
             </Box>
           </Box>
         </Box>
