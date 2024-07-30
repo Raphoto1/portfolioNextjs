@@ -141,9 +141,9 @@ export const projectsVfxList = [
     link2Title: "null",
   },
   {
-    title: "Multiple syncro screens",
-    description: "",
-    image: "/img/projects/vfx/Evento2.JPG",
+    title: "Tu cara me suena(TV show)",
+    description: "Screen content creatioin for tv Show",
+    image: "/img/projects/vfx/tcms7.jpg",
     link1: "https://1drv.ms/f/s!Aocl4KmjcP_slvA6r2EEqcNFYek1Pw",
     link1Title: "Samples",
     link2: "https://www.google.com/",
