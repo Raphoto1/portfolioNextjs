@@ -25,6 +25,7 @@ export default function ModalContact({ isOpen, onOpen, onClose, responseBack, se
   const [mailInput, setMailInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
   const [fetchError, setFetchError] = useState(false);
+  const [btnAllow, setBtnAllow] = useState(false);
   const isErrorMail = mailInput === "";
   const isErrorMessage = messageInput === "";
   const contactPath = "https://shops.creativerafa.com/api/contact";
@@ -48,6 +49,7 @@ export default function ModalContact({ isOpen, onOpen, onClose, responseBack, se
     let form = document.getElementById("contactForm");
     let formData = new FormData(form);
     try {
+      setBtnAllow(!btnAllow);
       const response = await fetch(contactPath, {
         mode: "no-cors",
         credentials: "include",
@@ -58,6 +60,7 @@ export default function ModalContact({ isOpen, onOpen, onClose, responseBack, se
         body: formData,
       });
       const resStatus = await response;
+      setBtnAllow(!btnAllow);
       closeMod();
     } catch (error) {
       alert(`catch: ${error}`);
@@ -94,7 +97,7 @@ export default function ModalContact({ isOpen, onOpen, onClose, responseBack, se
                 <Textarea name='message' resize={"vertical"} size={"sm"} onChange={setMessageInput} placeholder="Let's talk!!" />
               </FormControl>
               <Box pt={"5"}>
-                <Button type='submit'>Send</Button>
+                <Button isLoading={btnAllow} type='submit'>Send</Button>
               </Box>
             </form>
           </ModalBody>

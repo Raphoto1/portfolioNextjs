@@ -25,7 +25,7 @@ export default function SkillsetCreative() {
           gap={1}>
           <Box backgroundColor={"lightslategray"} w={{ md: "30%" }} className='md:w-1/4 w-full text-center rounded-md'>
             <Box pb={"1vh"}>
-              <TextAnimSubt text={""} />
+              <TextAnimSubt text={"Vfx"} />
             </Box>
             <SkillsList data={skillsCreative} />
           </Box>

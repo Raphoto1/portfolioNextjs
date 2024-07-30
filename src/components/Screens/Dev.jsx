@@ -19,7 +19,7 @@ export default function Dev() {
   const [slideIndex, setSlideIndex] = useState(0);
   const [dragging, setDragging] = useState(false);
   const dragX = useMotionValue(0);
-  const dragBuffer = 100;
+  const dragBuffer = 10;
   const slidesNumber = 2;
   const onDragStart = () => {
     setDragging(true);
