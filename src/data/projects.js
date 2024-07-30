@@ -2,7 +2,7 @@ export const projectsGeneralList = [
   {
     title: "ShopSeeker",
     description: "Personal Project to implement a better way to append all my POD shops as digital creator (front+back)",
-    image: "/img/projects/dev/shopseeker.png",
+    image: "/img/projects/dev/shopSeeker.png",
     link1: "https://shops.creativerafa.com/",
     link1Title: "Check Site",
     link2: "https://github.com/Raphoto1/shopseeker-fullstack",
@@ -56,7 +56,7 @@ export const projectsGeneralList = [
   {
     title: "Multiple syncro screens",
     description: "",
-    image: "/img/projects/vfx/evento2.jpg",
+    image: "/img/projects/vfx/Evento2.jpg",
     link1: "https://1drv.ms/f/s!Aocl4KmjcP_slvA6r2EEqcNFYek1Pw",
     link1Title: "Samples",
     link2: "https://www.google.com/",
@@ -74,7 +74,7 @@ export const projectsGeneralList = [
   {
     title: "Maps Series",
     description: "maps are echoes of our history",
-    image: "/img/projects/arts/Displate.png",
+    image: "/img/projects/arts/displate.png",
     link1: "https://shops.creativerafa.com/",
     link1Title: "Shops",
     link2: "https://shops.creativerafa.com/shops/65bbcc32752f9330d42b6e48",
@@ -95,7 +95,7 @@ export const projectsDevList = [
   {
     title: "ShopSeeker",
     description: "Personal Project to implement a better way to append all my POD shops as digital creator (front+back)",
-    image: "/img/projects/dev/shopseeker.png",
+    image: "/img/projects/dev/shopSeeker.png",
     link1: "https://shops.creativerafa.com/",
     link1Title: "Check Site",
     link2: "https://github.com/Raphoto1/shopseeker-fullstack",
@@ -143,7 +143,7 @@ export const projectsVfxList = [
   {
     title: "Multiple syncro screens",
     description: "",
-    image: "/img/projects/vfx/evento2.jpg",
+    image: "/img/projects/vfx/Evento2.jpg",
     link1: "https://1drv.ms/f/s!Aocl4KmjcP_slvA6r2EEqcNFYek1Pw",
     link1Title: "Samples",
     link2: "https://www.google.com/",
