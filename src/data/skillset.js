@@ -18,7 +18,7 @@ export const skillsCreative = [
     { name: "Premier", strenght: 40, image: "img/icons/soft/premiere.png" },
     { name: "Lightroom", strenght: 40, image: "img/icons/soft/lightroom.png" },
     { name: "Traditioinal Illustratioin", strenght: 40, image: "img/icons/creative/Acrilico.png" },
-    { name: "Digital Illustration", strenght: 40, image: "img/icons/creative/ilustracion Digital.png" },
+    { name: "Digital Illustration", strenght: 40, image: "img/icons/creative/Ilustracion Digital.png" },
 ]
 
 export const skillsGeneral = [
@@ -35,7 +35,7 @@ export const skillsDevFront = [
     { name: "JavaScript", strenght: 90, image: "img/icons/soft/javascript.png" },
     { name: "Nodejs", strenght: 40, image: "img/icons/soft/nodeJs.png" },
     { name: "React & React Native", strenght: 40, image: "img/icons/soft/reactIcon.png" },
-    { name: "Next JS", strenght: 20, image: "img/icons/soft/nextjs.png" },
+    { name: "Next JS", strenght: 20, image: "img/icons/soft/nextJs.png" },
 ]
 
 export const skillsDevBack = [

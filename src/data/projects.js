@@ -143,7 +143,7 @@ export const projectsVfxList = [
   {
     title: "Multiple syncro screens",
     description: "",
-    image: "/img/projects/vfx/Evento2.jpg",
+    image: "/img/projects/vfx/Evento2.JPG",
     link1: "https://1drv.ms/f/s!Aocl4KmjcP_slvA6r2EEqcNFYek1Pw",
     link1Title: "Samples",
     link2: "https://www.google.com/",
@@ -164,7 +164,7 @@ export const projectsArtsList = [
   {
     title: "Maps Series",
     description: "maps are echoes of our history",
-    image: "/img/projects/arts/Displate.png",
+    image: "/img/projects/arts/displate.png",
     link1: "https://shops.creativerafa.com/",
     link1Title: "Shops",
     link2: "https://shops.creativerafa.com/shops/65bbcc32752f9330d42b6e48",
