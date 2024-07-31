@@ -6,12 +6,13 @@ import { FiGithub } from "react-icons/fi";
 import { FaBehance } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
+import { IoShareSocial } from "react-icons/io5";
 export default function SocialLinks() {
   return (
     <>
       <Box display={'flex'} position={'absolute'} zIndex={15}>
         <Menu>
-          <MenuButton as={IconButton} aria-label='Social Media Links' icon={<TiSocialAtCircular size={"md"}/>} variant={'outline'}/>
+          <MenuButton as={IconButton} aria-label='Social Media Links' icon={<IoShareSocial />} variant={'ghost'}/>
           <MenuList>
             <MenuItem as={Link} icon={<FiGithub />} href="https://github.com/Raphoto1" isExternal>Github</MenuItem>
             <MenuItem as={Link} icon={<FaLinkedinIn />} href="https://www.linkedin.com/in/rafael-mart%C3%ADnez-0a579b63/" isExternal>LinkedIn</MenuItem>

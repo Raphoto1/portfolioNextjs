@@ -4,7 +4,7 @@ import React from "react";
 import TextAnimBold from "../TextAnim/TextAnimBold";
 import TextAnimSubt from "../TextAnim/TextAnimSubt";
 import SkillsList from "./SkillsList";
-import { skillsDevFront, skillsDevBack, skillsDevGeneral, skillsCreative } from "../../data/skillset";
+import { skillsDevFront, skillsDevBack, skillsDevGeneral, skillsVfx } from "../../data/skillset";
 export default function SkillsetCreative() {
   return (
     <>
@@ -27,7 +27,7 @@ export default function SkillsetCreative() {
             <Box pb={"1vh"}>
               <TextAnimSubt text={"Vfx"} />
             </Box>
-            <SkillsList data={skillsCreative} />
+            <SkillsList data={skillsVfx} />
           </Box>
         </Box>
       </Box>

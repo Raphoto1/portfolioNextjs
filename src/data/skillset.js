@@ -12,10 +12,11 @@ export const skillsDev = [
 ];
 
 export const skillsCreative = [
+  { name: "Creative Cloud", strenght: 90, image: "img/icons/soft/ccloud.png" },
   { name: "PhotoShop", strenght: 95, image: "img/icons/soft/photoshop.png" },
   { name: "Illustrator", strenght: 95, image: "img/icons/soft/ilustrador.png" },
-  { name: "Aftere Effects", strenght: 90, image: "img/icons/soft/after.png" },
-  { name: "Premier", strenght: 90, image: "img/icons/soft/premiere.png" },
+  { name: "After Effects", strenght: 90, image: "img/icons/soft/after.png" },
+  { name: "Premiere", strenght: 90, image: "img/icons/soft/premiere.png" },
   { name: "Lightroom", strenght: 70, image: "img/icons/soft/lightroom.png" },
   { name: "Traditioinal Illustratioin", strenght: 80, image: "img/icons/creative/Acrilico.png" },
   { name: "Digital Illustration", strenght: 90, image: "img/icons/creative/IDigital.png" },
@@ -24,6 +25,7 @@ export const skillsCreative = [
 export const skillsGeneral = [
   { name: "Windows OS", strenght: 90, image: "img/icons/soft/microsoft.png" },
   { name: "Mac OS", strenght: 80, image: "img/icons/soft/apple.png" },
+  { name: "Creative Cloud", strenght: 90, image: "img/icons/soft/ccloud.png" },
   { name: "Microsoft Office", strenght: 80, image: "img/icons/soft/office.png" },
   { name: "Google", strenght: 70, image: "img/icons/soft/google drive.png" },
   { name: "Blender", strenght: 40, image: "img/icons/soft/blender.png" },
@@ -50,4 +52,16 @@ export const skillsDevGeneral = [
   { name: "Github", strenght: 80, image: "img/icons/soft/GitHub.png" },
   { name: "Android", strenght: 60, image: "img/icons/soft/android.png" },
   { name: "Ios", strenght: 60, image: "img/icons/soft/ios.png" },
+  { name: "Docker", strenght: 30, image: "img/icons/soft/docker.png" },
+];
+
+export const skillsVfx = [
+  { name: "Creative Cloud", strenght: 90, image: "img/icons/soft/ccloud.png" },
+  { name: "After Effects", strenght: 90, image: "img/icons/soft/after.png" },
+  { name: "Premier", strenght: 90, image: "img/icons/soft/premiere.png" },
+  { name: "Audition", strenght: 90, image: "img/icons/soft/audicion.png" },
+  { name: "Blender", strenght: 70, image: "img/icons/soft/blender.png" },
+  { name: "C4d", strenght: 40, image: "img/icons/soft/c4d.png" },
+  { name: "PhotoShop", strenght: 95, image: "img/icons/soft/photoshop.png" },
+  { name: "Illustrator", strenght: 95, image: "img/icons/soft/ilustrador.png" },
 ];
