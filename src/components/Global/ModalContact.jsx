@@ -19,6 +19,7 @@ import {
   AlertTitle,
   AlertDescription,
   useToast,
+  Link
 } from "@chakra-ui/react";
 
 export default function ModalContact({ isOpen, onOpen, onClose, responseBack, setResponseBack }) {
@@ -96,8 +97,9 @@ export default function ModalContact({ isOpen, onOpen, onClose, responseBack, se
                 {isErrorMessage ? <FormHelperText>Message is required </FormHelperText> : null}
                 <Textarea name='message' resize={"vertical"} size={"sm"} onChange={setMessageInput} placeholder="Let's talk!!" />
               </FormControl>
-              <Box pt={"5"}>
+              <Box pt={"5"} display={'flex'} justifyContent={'space-around'}>
                 <Button isLoading={btnAllow} type='submit'>Send</Button>
+                <Button as={Link} href="pdf/CvRafa.pdf" download={true}>My Curriculum</Button>
               </Box>
             </form>
           </ModalBody>
