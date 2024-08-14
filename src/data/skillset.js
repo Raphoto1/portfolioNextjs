@@ -1,6 +1,7 @@
 export const skillsDev = [
   { name: "Html", strenght: 80, image: "img/icons/soft/html-5.png" },
   { name: "CSS-3", strenght: 80, image: "img/icons/soft/css-3.png" },
+  { name: "Sass", strenght: 70, image: "img/icons/soft/sass.png" },
   { name: "JavaScript", strenght: 80, image: "img/icons/soft/javascript.png" },
   { name: "Nodejs", strenght: 60, image: "img/icons/soft/nodeJs.png" },
   { name: "React & React Native", strenght: 70, image: "img/icons/soft/reactIcon.png" },
@@ -34,6 +35,7 @@ export const skillsGeneral = [
 export const skillsDevFront = [
   { name: "Html", strenght: 80, image: "img/icons/soft/html-5.png" },
   { name: "CSS-3", strenght: 80, image: "img/icons/soft/css-3.png" },
+  { name: "Sass", strenght: 70, image: "img/icons/soft/sass.png" },
   { name: "JavaScript", strenght: 80, image: "img/icons/soft/javascript.png" },
   { name: "Nodejs", strenght: 60, image: "img/icons/soft/nodeJs.png" },
   { name: "React & React Native", strenght: 70, image: "img/icons/soft/reactIcon.png" },
