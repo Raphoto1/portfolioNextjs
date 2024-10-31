@@ -10,6 +10,7 @@ export const skillsDev = [
   { name: "MongoDb", strenght: 70, image: "img/icons/soft/mongoDb.png" },
   { name: "Firebase", strenght: 50, image: "img/icons/soft/firebase.png" },
   { name: "Github", strenght: 80, image: "img/icons/soft/GitHub.png" },
+  { name: "Chakra Ui", strenght: 70, image: "img/icons/soft/chakra.png" },
 ];
 
 export const skillsCreative = [
@@ -40,6 +41,7 @@ export const skillsDevFront = [
   { name: "Nodejs", strenght: 60, image: "img/icons/soft/nodeJs.png" },
   { name: "React & React Native", strenght: 70, image: "img/icons/soft/reactIcon.png" },
   { name: "Next JS", strenght: 70, image: "img/icons/soft/nextJs.png" },
+  { name: "Chakra Ui", strenght: 70, image: "img/icons/soft/chakra.png" },
 ];
 
 export const skillsDevBack = [
