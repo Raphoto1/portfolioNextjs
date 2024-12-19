@@ -38,21 +38,23 @@ export const skillsDevFront = [
   { name: "CSS-3", strenght: 80, image: "img/icons/soft/css-3.png" },
   { name: "Sass", strenght: 70, image: "img/icons/soft/sass.png" },
   { name: "JavaScript", strenght: 80, image: "img/icons/soft/javascript.png" },
-  { name: "Nodejs", strenght: 60, image: "img/icons/soft/nodeJs.png" },
+  { name: "Nodejs", strenght: 70, image: "img/icons/soft/nodeJs.png" },
   { name: "React & React Native", strenght: 70, image: "img/icons/soft/reactIcon.png" },
   { name: "Next JS", strenght: 70, image: "img/icons/soft/nextJs.png" },
   { name: "Chakra Ui", strenght: 70, image: "img/icons/soft/chakra.png" },
 ];
 
 export const skillsDevBack = [
-  { name: "Nodejs", strenght: 60, image: "img/icons/soft/nodeJs.png" },
+  { name: "Nodejs", strenght: 70, image: "img/icons/soft/nodeJs.png" },
   { name: "Express JS", strenght: 60, image: "img/icons/soft/expressjs.png" },
   { name: "MongoDb", strenght: 70, image: "img/icons/soft/mongoDb.png" },
   { name: "Firebase", strenght: 50, image: "img/icons/soft/firebase.png" },
+  { name: "MySQL", strenght: 70, image: "img/icons/soft/mysql.png" },
+  { name: "Nest", strenght: 40, image: "img/icons/soft/nest.png" },
 ];
 
 export const skillsDevGeneral = [
-  { name: "Nodejs", strenght: 60, image: "img/icons/soft/nodeJs.png" },
+  { name: "Nodejs", strenght: 70, image: "img/icons/soft/nodeJs.png" },
   { name: "Github", strenght: 80, image: "img/icons/soft/GitHub.png" },
   { name: "Android", strenght: 60, image: "img/icons/soft/android.png" },
   { name: "Ios", strenght: 60, image: "img/icons/soft/ios.png" },
