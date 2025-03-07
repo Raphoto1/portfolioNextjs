@@ -17,7 +17,7 @@ export default function SocialLinks() {
             <MenuItem as={Link} icon={<FiGithub />} href="https://github.com/Raphoto1" isExternal>Github</MenuItem>
             <MenuItem as={Link} icon={<FaLinkedinIn />} href="https://www.linkedin.com/in/rafael-mart%C3%ADnez-0a579b63/" isExternal>LinkedIn</MenuItem>
             <MenuItem as={Link} icon={<FaInstagram />} href="https://www.instagram.com/creativerafaco/" isExternal>Instagram</MenuItem>
-            <MenuItem as={Link} icon={<FaBehance />} href="https://www.instagram.com/creativerafaco/" isExternal>Behance</MenuItem>
+            <MenuItem as={Link} icon={<FaBehance />} href="https://www.behance.net/Raphoto1" isExternal>Behance</MenuItem>
             <MenuItem as={Link} icon={<TiSocialFacebook />} href="https://www.facebook.com/CreativeRafaCo" isExternal>Facebook</MenuItem>
           </MenuList>
         </Menu>
