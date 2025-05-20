@@ -15,6 +15,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9669110661270895"
+     crossorigin="anonymous"></script>
       <link rel='icon' href='/favicon2.ico' type='image/<generated>' sizes='<generated>' />
       <body className={inter.className}>
         <Analytics/>
