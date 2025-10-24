@@ -5,6 +5,16 @@ export const skillsDev = [
   { name: "JavaScript", strenght: 80, image: "img/icons/soft/javascript.png" },
   { name: "Nodejs", strenght: 60, image: "img/icons/soft/nodeJs.png" },
   { name: "React & React Native", strenght: 70, image: "img/icons/soft/reactIcon.png" },
+  {
+    name: "Python",
+    strenght: 60,
+    image: "img/icons/soft/python.png",
+  },
+  {
+    name: "Django",
+    strenght: 60,
+    image: "img/icons/soft/django.png",
+  },
   { name: "Next JS", strenght: 70, image: "img/icons/soft/nextJs.png" },
   { name: "Express JS", strenght: 60, image: "img/icons/soft/expressjs.png" },
   { name: "MongoDb", strenght: 70, image: "img/icons/soft/mongoDb.png" },
@@ -42,6 +52,11 @@ export const skillsDevFront = [
   { name: "React & React Native", strenght: 70, image: "img/icons/soft/reactIcon.png" },
   { name: "Next JS", strenght: 70, image: "img/icons/soft/nextJs.png" },
   { name: "Chakra Ui", strenght: 70, image: "img/icons/soft/chakra.png" },
+    {
+    name: "Django",
+    strenght: 60,
+    image: "img/icons/soft/django.png",
+  },
 ];
 
 export const skillsDevBack = [
@@ -51,6 +66,16 @@ export const skillsDevBack = [
   { name: "Firebase", strenght: 50, image: "img/icons/soft/firebase.png" },
   { name: "MySQL", strenght: 70, image: "img/icons/soft/mysql.png" },
   { name: "Nest", strenght: 40, image: "img/icons/soft/nest.png" },
+  {
+    name: "Python",
+    strenght: 60,
+    image: "img/icons/soft/python.png",
+  },
+    {
+    name: "Django",
+    strenght: 60,
+    image: "img/icons/soft/django.png",
+  },
 ];
 
 export const skillsDevGeneral = [
@@ -59,6 +84,11 @@ export const skillsDevGeneral = [
   { name: "Android", strenght: 60, image: "img/icons/soft/android.png" },
   { name: "Ios", strenght: 60, image: "img/icons/soft/ios.png" },
   { name: "Docker", strenght: 30, image: "img/icons/soft/docker.png" },
+  {
+    name: "Python",
+    strenght: 60,
+    image: "img/icons/soft/python.png",
+  },
 ];
 
 export const skillsVfx = [

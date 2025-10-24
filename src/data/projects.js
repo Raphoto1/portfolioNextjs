@@ -110,6 +110,24 @@ export const projectsDevList = [
     link2: "https://github.com/Raphoto1/finalDesarrolloApps",
     link2Title: "Github",
   },
+    {
+    title: "Arcidrade",
+    description: "NextJs Fullstack app focused on connect Doctors with Institutions from all over the world",
+    image: "/img/projects/dev/arcidrade.png",
+    link1: "https://www.arcidrade.com/",
+    link1Title: "Link",
+    link2: "https://github.com/Raphoto1/finalDesarrolloApps",
+    link2Title: "null",
+  },
+        {
+    title: "Pacho Lopez Y la cumbia mestiza",
+    description: "NextJs Fullstack for Music Band",
+    image: "/img/projects/dev/pacho.png",
+    link1: "https://pacholopez.co/",
+    link1Title: "Link",
+    link2: "https://github.com/Raphoto1/finalDesarrolloApps",
+    link2Title: "null",
+  },
 ];
 
 export const projectsVfxList = [
