@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import CardAnim from "./CardAnim";
@@ -6,9 +6,12 @@ import CardAnim from "./CardAnim";
 export default function CardAnimContainer({ dataIn, dataLenght }) {
   const [index, setIndex] = useState(0);
 
-  if (dataLenght == index) {
-    setIndex(0);
-  }
+  useEffect(() => {
+    if (dataLenght === index) {
+      setIndex(0);
+    }
+  }, [index, dataLenght]);
+
   return (
     <motion.div style={{ width: "100%", height: "100%", display: "flex", justifyContent: "center"}}>
       <AnimatePresence initial={false}>

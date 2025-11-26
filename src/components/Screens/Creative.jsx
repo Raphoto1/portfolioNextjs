@@ -12,6 +12,7 @@ import SkillsetCreative from "../Info/SkillsetCreative";
 import TextAnimBold from "../TextAnim/TextAnimBold";
 import TextAnimSubt from "../TextAnim/TextAnimSubt";
 import ProjectsCreative from "../Info/ProjectsCreative";
+import ProjectsCreativeDynamic from "../Info/ProjectsCreativeDynamic";
 import DragSign from "../Signs/DragSign";
 
 export default function Creative() {
@@ -78,7 +79,8 @@ export default function Creative() {
           </Box>
           <Box display={"flex"} w={"100%"} minW={"100%"} minHeight={"100vh"} height={"100%"} pl={0}>
             <Box justifyContent={"center"} display={"flex"} minW={"100vw"} zIndex={15}>
-              <ProjectsCreative />
+              {/* <ProjectsCreative /> */}
+              <ProjectsCreativeDynamic />
             </Box>
           </Box>
         </Box>
