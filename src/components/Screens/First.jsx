@@ -1,7 +1,7 @@
 "use client";
 //imports from app
 import React, { useState } from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Button, Link } from "@chakra-ui/react";
 import { motion, useMotionValue } from "framer-motion";
 //imports created
 import Face from "../Faces/Face";
@@ -69,18 +69,18 @@ export default function First() {
             </Box>
             <Face glass={"item.color"} title={"item.title"} text={"item.text"} />
           </Box>
-          <Box display={"flex"} w={'100%'} minW={"100%"} minHeight={"100vh"} height={'100%'} pl={0} alignItems={'center'}>
+          <Box display={"flex"} w={"100%"} minW={"100%"} minHeight={"100vh"} height={"100%"} pl={0} alignItems={"center"}>
             <Box justifyContent={"center"} display={"flex"} position={"absolute"} minW={"100vw"} zIndex={15}>
               <Bio />
             </Box>
           </Box>
           <Box display={"flex"} w={"100%"} minW={"100%"} minHeight={"100vh"} height={"100%"} pl={0}>
-            <Box >
+            <Box>
               <SkillsetGeneral />
             </Box>
           </Box>
-          <Box display={"flex"} minW={"100%"} minHeight={"100%"} pl={0} justifyContent={'center'}>
-            <Box >
+          <Box display={"flex"} minW={"100%"} minHeight={"100%"} pl={0} justifyContent={"center"}>
+            <Box>
               <ProjectsGeneral />
             </Box>
           </Box>
